@@ -1,0 +1,11 @@
+
+  
+
+  @media (max-width: 768px) {
+    .signup-box {
+      padding: 16px;
+      width: 90%; 
+      margin: 0 auto; 
+    }
+  }
+  
