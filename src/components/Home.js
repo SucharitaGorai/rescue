@@ -3,18 +3,8 @@ import { Link } from 'react-router-dom';
 import './Home.css'; 
 
 function Home() {
-  const states = [
-    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
-    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", 
-    "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", 
-    "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", 
-    "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", 
-    "Uttar Pradesh", "Uttarakhand", "West Bengal", "Delhi"
-  ];
-
   return (
     <div>
-      
       <div
         className="banner"
         style={{
@@ -51,21 +41,17 @@ function Home() {
         </div>
       </div>
 
-      
       <div className="home-container">
-        
         <div className="left-column">
           <h2>Notifications Related To Disasters</h2>
           <Link to="/youtube-videos">Tab for Youtube</Link>
         </div>
-
         
         <div className="right-section">
-          {states.map((state, index) => (
-            <div key={index} className="state-box">
-              <p>{state}</p>
-            </div>
-          ))}
+          <h2>Disaster-Related Information</h2>
+          <div className="alert-container">
+            <div className="blinking-text">Alert!</div>
+          </div>
         </div>
       </div>
     </div>
